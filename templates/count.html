@@ -1,0 +1,31 @@
+<h1>There are {{ wordcountis }} words in your text</h1>
+
+<a href = "{% url 'homex' %}">Start Again?</a>
+
+<br/>
+
+<h1>Your text: </h1>
+{{ fulltextis }}
+
+<br/>
+
+<h1>Top 3 Word Rankings: </h1>
+
+<ul>
+
+    {% for word, count in sortedWordRankingtrunicated %}
+
+        <li>
+            {{word}} :{{count}}
+        </li>
+        <br/>
+    
+    
+    
+    
+    {% endfor %}
+
+
+
+
+</ul>
